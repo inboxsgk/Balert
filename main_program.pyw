@@ -9,28 +9,18 @@ def notification(title, text):
     n.message = text
     n.send(block=False)
 
-
-
+    
 warn_p = int(open("config.txt").read())
 
 while True:
     battery = psutil.sensors_battery()
     plug = battery.power_plugged
     if plug == True:
+        if int(battery.percent) > int(warn_p[0]):
+            notification("Unplug charger", ("The Power is at "+str(battery.percent)))    
         time.sleep(15)
     else:
-        notification("On Battery", "Power Source Disconnected")
-        time.sleep(25)
-        battery = psutil.sensors_battery()
-        plug = battery.power_plugged
-        lev = int(battery.percent)
-        while plug == False:
-            battery = psutil.sensors_battery()
-            plug = battery.power_plugged
-            if (int(battery.percent) <= warn_p) and (int(battery.percent)!= lev):
-                notification("Emergency", ("The Power is at "+str(batter.percent)))
-                lev = int(battery.percent)
-            time.sleep(10)
-
-        else:
-            notification("Charger Connected", "Power source is now restored")
+        if int(battery.percent) < int(warn_p[1]):
+            notification("Low Battery, Plug-in charger", ("The Power is at "+str(battery.percent)))
+       
+        time.sleep(15)
