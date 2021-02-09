@@ -1,4 +1,4 @@
-# Critical battery alert for faulty laptops
+# Critical battery alert for laptop users
 ## Who is this project for?
 Most laptop batteries becomes faulty after several years of usage i.e., The charge doesn't decrease gradually. So if the power source is disconnected, the battery lasts only a few minutes. Without even notifying us, the system will be forced shutdown leading to interruption in your workflow. This project is meant to be useful for all of us suffering from this issue.
 
