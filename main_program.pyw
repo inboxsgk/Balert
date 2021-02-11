@@ -10,7 +10,7 @@ def notification(title, text):
     n.send(block=False)
 
     
-warn_p = int(open("config.txt").read())
+warn_p = list(open("config.txt").readlines())
 
 while True:
     battery = psutil.sensors_battery()
