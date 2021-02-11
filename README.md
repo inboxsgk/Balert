@@ -5,9 +5,9 @@ Most laptop batteries becomes faulty after several years of usage i.e., The char
 ## What does this project do?
 This project throws a notification to the user whenever the charge levels of laptop battery falls below or above the specified levels. (Useful for maintaining charge at certain levels)
 
-#Your Contributions
+## Your Contributions
 All your contributions are welcome, whether it's a upgrade or fixing of bugs or anything. You can always contribute :)
 
 ### Note: This project was meant to run in the background so I've saved the source file as .pyw instead of .py
 
-This project was built with notify-py (https://github.com/ms7m/notify-py)
+This project was built with [notify-py](https://github.com/ms7m/notify-py)
