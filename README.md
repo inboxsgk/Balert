@@ -62,6 +62,4 @@ All your contributions are welcome. If you have an idea for a new feature or hav
 
 ### Note: This project was meant to run in the background so I've saved the source file as .pyw instead of .py
 
-This project was built with 
-
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Finboxsgk%2FBalert%2F&label=Views&countColor=%23263759)
